@@ -12,38 +12,38 @@ const Sidebar = () => {
       <div className="menu">
         <ul>
           <li>
-            <a href="#">PORTFOLIO</a>
+            <a href="#portfolio">PORTFOLIO</a>
           </li>
           <li>
-            <a href="#">MY OFFER</a>
+            <a href="#offer">MY OFFER</a>
           </li>
           <li>
-            <a href="#">CONTACT ME</a>
+            <a href="#contact">CONTACT ME</a>
           </li>
           <li>
-            <a href="#">MY CV</a>
+            <a href="#cv">MY CV</a>
           </li>
           <li>
-            <a href="#">MY TECH TALKS</a>
+            <a href="#techtalks">MY TECH TALKS</a>
           </li>
 
           <li>
-            <a href="#">PERSONAL BLOG</a>
+            <a href="#blog">PERSONAL BLOG</a>
           </li>
         </ul>
       </div>
       <footer>
         <p>GET IN TOUCH</p>
-        <a href="">
+        <a href="saman.zahedi10@gmail.com">
           <i class="fa-solid fa-envelope"></i>
         </a>
-        <a href="">
+        <a href="linkedin.com">
           <i class="fa-brands fa-linkedin"></i>
         </a>
-        <a href="">
+        <a href="https://github.com/SamanZahedi">
           <i class="fa-brands fa-github-square"></i>
         </a>
-        <a href="">
+        <a href="www.facebook.com">
           <i class="fa-brands fa-facebook-square"></i>
         </a>
       </footer>
