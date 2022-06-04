@@ -1,27 +1,40 @@
 import React from "react";
-import Logo from "../assets/images/profile.png";
+import profilePic from "../assets/images/profile.png";
+import Offer from "./Offer";
+import Portfolio from "./Portfolio";
+import Cv from "./Cv";
+// import Portfolio from "./Portfolio";
 
-const Sidebar = () => {
+// const displayPortfolio = () => {
+//   return (
+//   <Portfolio />
+//   )
+// }
+const Sidebar = ({handleClick}) => {
   return (
     <sidebar>
       <div className="profile">
-        <img src={Logo} alt="" />
+        <img src={profilePic} alt="" />
         <h3>SAMAN ZAHEDI</h3>
         <p>FULL STACK DEVELOPER</p>
       </div>
       <div className="menu">
         <ul>
           <li>
-            <a href="#portfolio">PORTFOLIO</a>
+            <a href="#portfolio" onClick={() => handleClick(<Portfolio />)}>
+              PORTFOLIO
+            </a>
           </li>
           <li>
-            <a href="#offer">MY OFFER</a>
+            <a href="#offer" onClick={() => handleClick(<Offer />)}>
+              MY OFFER
+            </a>
           </li>
           <li>
             <a href="#contact">CONTACT ME</a>
           </li>
           <li>
-            <a href="#cv">MY CV</a>
+            <a href="#cv" onClick={() => handleClick(<Cv />)}>MY CV</a>
           </li>
           <li>
             <a href="#techtalks">MY TECH TALKS</a>
@@ -37,14 +50,17 @@ const Sidebar = () => {
         <a href="saman.zahedi10@gmail.com">
           <i class="fa-solid fa-envelope"></i>
         </a>
-        <a href="linkedin.com">
+        <a href="https://www.linkedin.com/in/saman-zahedi-967384a9/" >
           <i class="fa-brands fa-linkedin"></i>
         </a>
         <a href="https://github.com/SamanZahedi">
           <i class="fa-brands fa-github-square"></i>
         </a>
-        <a href="www.facebook.com">
+        <a href="https://www.facebook.com/saman.zahedi.58">
           <i class="fa-brands fa-facebook-square"></i>
+        </a>
+        <a href="https://mobile.twitter.com/Saman7479">
+          <i class="fa-brands fa-twitter-square"></i>
         </a>
       </footer>
     </sidebar>
