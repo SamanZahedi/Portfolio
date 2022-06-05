@@ -10,7 +10,7 @@ import Cv from "./Cv";
 //   <Portfolio />
 //   )
 // }
-const Sidebar = ({handleClick}) => {
+const Sidebar = ({ handleClick }) => {
   return (
     <sidebar>
       <div className="profile">
@@ -34,7 +34,9 @@ const Sidebar = ({handleClick}) => {
             <a href="#contact">CONTACT ME</a>
           </li>
           <li>
-            <a href="#cv" onClick={() => handleClick(<Cv />)}>MY CV</a>
+            <a href="#cv" onClick={() => handleClick(<Cv />)}>
+              MY CV
+            </a>
           </li>
           <li>
             <a href="#techtalks">MY TECH TALKS</a>
@@ -47,19 +49,26 @@ const Sidebar = ({handleClick}) => {
       </div>
       <footer>
         <p>GET IN TOUCH</p>
-        <a href="saman.zahedi10@gmail.com">
+        <a
+          href="mailto:saman.zahedi10@gmail.com"
+          target="_blank"
+          rel="noreferrer"
+        >
           <i class="fa-solid fa-envelope"></i>
         </a>
-        <a href="https://www.linkedin.com/in/saman-zahedi-967384a9/" >
+        <a
+          href="https://www.linkedin.com/in/saman-zahedi-967384a9/"
+          target="new window"
+        >
           <i class="fa-brands fa-linkedin"></i>
         </a>
-        <a href="https://github.com/SamanZahedi">
+        <a href="https://github.com/SamanZahedi" target="new window">
           <i class="fa-brands fa-github-square"></i>
         </a>
-        <a href="https://www.facebook.com/saman.zahedi.58">
+        <a href="https://www.facebook.com/saman.zahedi.58" target="new window">
           <i class="fa-brands fa-facebook-square"></i>
         </a>
-        <a href="https://mobile.twitter.com/Saman7479">
+        <a href="https://mobile.twitter.com/Saman7479" target="new window">
           <i class="fa-brands fa-twitter-square"></i>
         </a>
       </footer>
