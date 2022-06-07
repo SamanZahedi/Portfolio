@@ -6,7 +6,7 @@
 sidebar {
   width: 400px;
   height: 200vh;
-  background: url('./assets/images/sidebar-pattern.jpg');
+  background: url("./assets/images/sidebar-pattern.jpg");
   background-repeat: no-repeat;
   /* filter: blur(1px); */
 }
@@ -17,6 +17,7 @@ main {
   text-align: left;
   margin: 10px;
   background-color: #ffff;
+  overflow: scroll;
 }
 
 .profile {
@@ -58,7 +59,7 @@ sidebar footer {
   bottom: 10px;
   text-align: left;
   margin-left: 40px;
-  color: #fff
+  color: #fff;
 }
 
 sidebar footer i {
