@@ -3,12 +3,12 @@ import React, { useState } from 'react';
 
 import Sidebar from './components/Sidebar';
 // import Cv from './components/Cv';
-// import Portfolio from './components/Portfolio';
+import Portfolio from './components/Portfolio';
 // import Offer from './components/Offer';
 
 
 function App() {
-    const [path, setPath] = useState("");
+    const [path, setPath] = useState(Portfolio);
 
     const handleClick = (changedPath) => {
       setPath(changedPath);
